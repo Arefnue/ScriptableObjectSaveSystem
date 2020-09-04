@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Great\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Great\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_ScriptableObjectSaveSystem.787292345.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Great\Documents\GitHub\MyTools\Scriptable\ScriptableObjectSaveSystem" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="ScriptableObjectSaveSystem" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="SaveSystem" t="Include">
+              <e p="DatabaseContainerSO.cs" t="Include" />
+              <e p="DatabaseSO.cs" t="Include" />
+            </e>
+            <e p="Testers" t="Include">
+              <e p="PersistentObject.cs" t="Include" />
+              <e p="TesterWithDragAndUse.cs" t="Include" />
+              <e p="TesterWithSingleton.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="ScriptableObjectSaveSystem.sln" t="IncludeFlat" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
