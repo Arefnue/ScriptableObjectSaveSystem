@@ -71,6 +71,11 @@ namespace ScriptableObjectSaveSystem.Scripts.SaveSystem
 
         private void OnDisable()
         {
+            Save();
+        }
+
+        public void Save()
+        {
             if (testMode)
             {
                 Debug.Log("Database is on test mode and SO is disabled");
@@ -88,7 +93,5 @@ namespace ScriptableObjectSaveSystem.Scripts.SaveSystem
                 
             }
         }
-    
-    
     }
 }

@@ -76,6 +76,11 @@ namespace ScriptableObjectSaveSystem.Scripts.SaveSystem
             saveProfile.VectorExample = vectorContainer;
 
         }
+
+        public void Save()
+        {
+            saveProfile.Save();
+        }
     
     
     }

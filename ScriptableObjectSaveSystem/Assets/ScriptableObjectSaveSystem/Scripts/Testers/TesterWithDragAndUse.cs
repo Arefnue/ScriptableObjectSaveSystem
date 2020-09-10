@@ -31,5 +31,16 @@ namespace ScriptableObjectSaveSystem.Scripts.Testers
         {
             databaseContainer.ResetDatabase();
         }
+        
+        // In order to prevent game kill
+        private void OnApplicationPause(bool pauseStatus)
+        {
+            if (pauseStatus)
+            {
+                databaseContainer.Save();
+            }
+            
+        }
+        
     }
 }

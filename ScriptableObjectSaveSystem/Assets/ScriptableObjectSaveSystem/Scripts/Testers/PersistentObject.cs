@@ -1,4 +1,5 @@
-﻿using ScriptableObjectSaveSystem.Scripts.SaveSystem;
+﻿using System;
+using ScriptableObjectSaveSystem.Scripts.SaveSystem;
 using UnityEngine;
 
 namespace ScriptableObjectSaveSystem.Scripts.Testers
@@ -15,11 +16,14 @@ namespace ScriptableObjectSaveSystem.Scripts.Testers
             if (Save == null)
             {
                 Save = this;
+                
             }
             else
             {
                 Destroy(gameObject);
             }
+            
+            DontDestroyOnLoad(gameObject);
         }
 
 
@@ -27,6 +31,15 @@ namespace ScriptableObjectSaveSystem.Scripts.Testers
     
     
         public DatabaseContainerSO databaseContainer;
-        
+
+        // In order to prevent game kill
+        private void OnApplicationPause(bool pauseStatus)
+        {
+            if (pauseStatus)
+            {
+                databaseContainer.Save();
+            }
+            
+        }
     }
 }
